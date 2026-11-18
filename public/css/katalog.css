@@ -1,0 +1,8 @@
+.poli-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px 28px;margin-bottom:20px}
+.poli-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+.poli-head h2{margin:0;font-size:22px}
+.poli-head p{margin:4px 0 16px;color:var(--muted)}
+.chip{display:inline-block;background:var(--mint-l);color:var(--green);font-size:13px;padding:2px 10px;border-radius:999px;vertical-align:middle}
+.doc-box{background:#f8fafb;border-radius:14px;padding:18px 22px;max-width:640px;margin-top:10px}
+.doc-box strong{font-size:17px}
+.doc-sched{margin-top:12px;line-height:1.7}

@@ -1,0 +1,23 @@
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-bottom:22px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 18px}
+.stat small{color:var(--muted);font-size:13px}
+.stat b{display:block;font-size:28px;line-height:1.2}
+.toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-bottom:12px}
+.toolbar .input{width:auto;min-width:200px}
+.toolbar .inline{display:flex;align-items:center;gap:10px;color:var(--muted);font-weight:500}
+.toolbar .inline .input{min-width:160px}
+.table-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow-x:auto;margin-top:14px}
+.table{width:100%;border-collapse:collapse;min-width:820px}
+.table th{background:#f8fafb;text-align:left;padding:14px 18px;font-size:14px}
+.table td{padding:14px 18px;border-top:1px solid var(--line);vertical-align:middle;font-size:14.5px}
+.table tr.row-called{background:#fffbeb}
+.table .empty{text-align:center;color:var(--muted);padding:34px}
+.table .qcode{font-weight:800;color:var(--green)}
+.actions{display:flex;flex-wrap:wrap;gap:6px}
+.ahead{display:block;font-size:12px;color:var(--muted);margin-top:4px}
+.days{display:flex;flex-wrap:wrap;gap:8px}
+.day input{display:none}
+.day span{display:inline-block;padding:7px 14px;border:1.5px solid var(--line);border-radius:999px;cursor:pointer;font-weight:500;font-size:14px}
+.day input:checked+span{background:var(--green);border-color:var(--green);color:#fff}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+@media(max-width:600px){.grid3{grid-template-columns:1fr}}

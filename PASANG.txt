@@ -1,0 +1,17 @@
+PASANG (Laragon, Laravel 13)
+1. Ekstrak zip ini ke folder proyek, timpa file yang sama (struktur folder sudah sesuai).
+2. Tambahkan ke .env:
+     GEMINI_API_KEY=isi_dari_aistudio.google.com/apikey
+     GEMINI_MODEL=gemini-flash-latest
+3. php artisan migrate
+   php artisan db:seed --class=ArticleSeeder
+   php artisan config:clear && php artisan route:clear && php artisan view:clear
+4. Tes Gemini (satu poli dulu):  php artisan articles:generate --poli=GG
+   Semua poli:                  php artisan articles:generate
+   Paksa buat ulang minggu ini: tambahkan --force
+5. Jadwal mingguan (Senin 06:00, sudah di routes/console.php):
+   - Saat develop: php artisan schedule:work  (biarkan terminal terbuka)
+   - Server/Windows: jalankan tiap menit "php artisan schedule:run"
+     (Linux cron: * * * * * cd /path/proyek && php artisan schedule:run >> /dev/null 2>&1)
+6. Gambar: taruh public/images/hero-ilustrasi.png (lihat public/images/README.txt)
+7. Info klinik (alamat, jam, hotline): edit config/sehatyuk.php

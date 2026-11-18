@@ -1,0 +1,81 @@
+.lp{max-width:1080px;margin:0 auto}
+.lp section{margin-bottom:84px}
+.lp h2{margin:0}
+.sec-title{font-size:30px;font-weight:800;letter-spacing:-.5px;margin:0 0 6px!important}
+.sec-sub{color:var(--muted);margin:0 0 28px;max-width:70ch}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center}
+.hero h1{font-size:44px;line-height:1.12;letter-spacing:-1.2px;font-weight:800;margin:0 0 18px}
+.hero h1 span{color:var(--green)}
+.hero p{color:var(--muted);font-size:17px;max-width:54ch;margin:0 0 26px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.stats{display:flex;gap:34px;flex-wrap:wrap;margin-top:38px}
+.stats div{display:flex;flex-direction:column}
+.stats b{font-size:28px;color:var(--green);letter-spacing:-.5px}
+.stats span{font-size:14px;color:var(--muted)}
+.hero-img img{width:100%;height:auto;display:block}
+.hero-img.empty{min-height:300px;border-radius:24px;background:var(--mint-l)}
+
+/* Alur */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.steps li{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.steps b{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--mint-l);color:var(--green)}
+.steps h3{margin:14px 0 6px;font-size:17px}
+.steps p{margin:0;color:var(--muted);font-size:14.5px}
+
+/* Poli */
+.poli-grid,.art-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px}
+.poli-item{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;display:flex;flex-direction:column}
+.poli-ic{width:46px;height:46px;border-radius:12px;background:var(--mint-l);display:grid;place-items:center;margin-bottom:14px}
+.poli-ic svg,.poli-ic{color:var(--green)}
+.poli-ic svg{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.poli-item h3{margin:0 0 6px;font-size:18px}
+.poli-item p{margin:0 0 18px;color:var(--muted);font-size:14.5px;flex:1}
+.poli-foot{display:flex;justify-content:space-between;font-size:14px;color:var(--muted)}
+.poli-foot b{color:var(--ink)}
+.poli-foot a{font-weight:700;text-decoration:none}
+
+/* Artikel */
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+.chips button,.chips a{border:1px solid var(--line);background:#fff;color:var(--ink);padding:8px 18px;border-radius:999px;font:inherit;font-size:14px;font-weight:600;cursor:pointer;text-decoration:none}
+.chips .on{background:var(--green);border-color:var(--green);color:#fff}
+.art-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;display:flex;flex-direction:column;gap:10px}
+.art-poli{align-self:flex-start;background:#f1f5f4;border-radius:8px;padding:4px 10px;font-size:13px;font-weight:600}
+.art-card h3{margin:0;font-size:17px;line-height:1.35}
+.art-card h3 a{color:var(--ink);text-decoration:none}
+.art-card p{margin:0;color:var(--muted);font-size:14.5px;flex:1}
+.art-meta{display:flex;gap:8px;flex-wrap:wrap;align-items:center;font-size:13px;color:var(--muted)}
+.art-meta b{color:var(--green)}
+.art-meta em{font-style:normal;background:#f1f5f4;padding:1px 8px;border-radius:6px}
+.art-more{font-weight:700;font-size:14.5px}
+.art-all,.pager{margin-top:22px;font-weight:600;display:flex;gap:22px}
+.pager{justify-content:space-between}
+
+/* Detail artikel */
+.art{max-width:720px}
+.art .back{display:inline-block;margin-bottom:18px;text-decoration:none;font-weight:600}
+.art h1{font-size:34px;line-height:1.2;letter-spacing:-.6px;margin:12px 0}
+.art-body{margin:24px 0}
+.art-body p,.art-body li{font-size:17px;line-height:1.75}
+.art-body h3{font-size:20px;margin:28px 0 8px}
+.art-body ul{padding-left:22px}
+.disclaimer{background:var(--warn-l);color:#92400e;border-radius:12px;padding:14px 18px;font-size:14px;margin:0 0 22px}
+
+/* Info klinik + CTA */
+.clinic{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;background:#fff;border:1px solid var(--line);border-radius:24px;padding:36px 40px}
+.clinic h2{font-size:28px;font-weight:800;margin-bottom:8px!important}
+.clinic p{margin:0 0 6px;color:var(--muted)}
+.clinic-meta{font-size:14px;color:var(--ink)!important}
+.cta{text-align:center}
+.cta h2{font-size:34px;font-weight:800;letter-spacing:-.8px;margin-bottom:20px!important}
+.cta img{display:block;max-width:460px;width:100%;margin:28px auto 0}
+.lp-foot{display:flex;gap:10px 32px;flex-wrap:wrap;align-items:center;border-top:1px solid var(--line);padding-top:22px;color:var(--muted);font-size:14px}
+.lp-foot b{color:var(--ink)}.lp-foot b span{color:var(--mint)}
+
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr}.hero h1{font-size:32px}
+  .steps{grid-template-columns:1fr 1fr}
+  .clinic{padding:24px}.lp section{margin-bottom:56px}
+}
+@media(max-width:560px){.steps{grid-template-columns:1fr}}
