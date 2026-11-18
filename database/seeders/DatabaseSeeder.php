@@ -12,14 +12,14 @@ class DatabaseSeeder extends Seeder
 {
     public function run(): void
     {
-        User::updateOrCreate(['email' => 'admin@sehatyuk.com'], [
-            'name' => 'Admin SehatYuk', 'phone' => '081200000001',
-            'password' => Hash::make('admin123'), 'role' => 'admin',
-        ]);
-        User::updateOrCreate(['email' => 'petugas@sehatyuk.com'], [
-            'name' => 'Petugas SehatYuk', 'phone' => '081200000002',
-            'password' => Hash::make('petugas123'), 'role' => 'petugas',
-        ]);
+       User::updateOrCreate(['email' => 'admin@sehatyuk.com'], [
+    'name' => 'Admin SehatYuk', 'phone' => '085212345678',
+    'password' => Hash::make(env('ADMIN_PASSWORD')), 'role' => 'admin',
+]);
+       User::updateOrCreate(['email' => 'petugas@sehatyuk.com'], [
+    'name' => 'Petugas SehatYuk', 'phone' => '081200000002',
+    'password' => Hash::make(env('PETUGAS_PASSWORD')), 'role' => 'petugas',
+]);
 
         $data = [
             ['UM', 'Poli Umum', 'Pemeriksaan kesehatan umum dan konsultasi awal.',
